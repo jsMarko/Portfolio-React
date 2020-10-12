@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+   background-color: #444;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+   text-align: center;
+   margin: 0 auto;
+   background-color: #f6f6ff;
+   min-height: 100vh;
+   max-width: 1250px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 120px;
+   background: #142239;
+   color: white;
+   margin-bottom: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.my-logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.2rem;
+   border: 1px solid #fff;
+   width: 40px;
+   height: 40px;
+   margin-bottom: 8px;
+   margin-left: 20px;
+   padding: 5px;
+   border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.marko-logo {
+   width: 249px;
+}
+
+.nav-links {
+   width: 50%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   list-style: none;
+}
+
+.nav-links li {
+   font-size: 1.2rem;
+   padding: 10px 20px;
+}
+
+.nav-links li:hover {
+   border: 1px solid #fff;
+}
+
+.title {
+   font-size: 3rem;
+}
+
+.nick-name {
+   font-family: "Pinyon Script", cursive;
+   font-size: 1.2rem;
+   margin: 15px 0;
+}
+
+.hero {
+   height: 268px;
+   width: 100%;
+   background: no-repeat 90% 50% / cover url("./images/hero.png");
+   position: relative;
+   margin-bottom: 25px;
+}
+
+.portfolio-text {
+   font-family: "Prata", serif;
+   font-size: 1.1rem;
+   position: absolute;
+   bottom: 60px;
+   right: 50%;
+   color: #f5f5f5;
+}
+
+.name {
+   font-family: "Pinyon Script", cursive;
+   position: absolute;
+   color: #f5f5f5;
+   bottom: 20px;
+   right: 28%;
+   font-size: 1.8rem;
+   letter-spacing: 1.21px;
+}
+
+/* *********************************************************** */
+/*                      MEDIA QUIRIES                          */
+/* *********************************************************** */
+
+@media screen and (min-width: 768px) {
+   nav {
+      flex-direction: row;
+      justify-content: space-between;
+      height: 95px;
+      /* padding: 0 20px; */
+   }
+
+   .my-logo {
+      font-size: 1.4rem;
+      width: 50px;
+      height: 50px;
+   }
+
+   .nav-links li {
+      font-size: 1.4rem;
+   }
+
+   .marko-logo {
+      width: 295px;
+   }
+
+   .nick-name {
+      font-size: 1.5rem;
+   }
+
+   .portfolio-text {
+      bottom: 120px;
+      right: 50%;
+      font-size: 1.8rem;
+   }
+
+   .name {
+      bottom: 40px;
+      right: 30%;
+      font-size: 3rem;
+   }
 }
